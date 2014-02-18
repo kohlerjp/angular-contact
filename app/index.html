@@ -2,7 +2,7 @@
 <html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
-  <title>My AngularJS App</title>
+  <title>Contact</title>
   <link rel="stylesheet" href="css/app.css"/>
     <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/bootstrap.css">
@@ -12,17 +12,17 @@
   <div class="container">
     <h1>Contact Us</h1>
     <ul class="people">
+      <!-- Iterate over each person -->
           <li ng-repeat="person in people">
             <img class="img-thumbnail" src="{{person.image}}">
-            <p>{{person.name}}     
+            <p>{{person.name}}   
+              <!-- When checkbox is added, person is added to / removed from selection list  -->
               <input
                   type="checkbox"
                   name="selectedPerson[]"
                   value="{{person}}"
-                  
                   ng-click="toggleSelection(person)">
             </p>
-
             <p>{{person.position}}</p>
             <p>{{person.phone}}</p>
             <p><a href="mailto:{{person.email}}?Subject=Hello" target="_top">{{person.email}}</a></p>

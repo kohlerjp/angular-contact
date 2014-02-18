@@ -1,5 +1,5 @@
 # Contact Information app
 
 # How To Use
-Clone this repository
-run node ./scripts/web-server.js and go to localhost:8000
+Clone this repository and
+run node ./scripts/web-server.js, then go to localhost:8000/app/index.html
