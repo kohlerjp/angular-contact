@@ -10,27 +10,12 @@
 
 <body ng-controller="PeopleController">
   <div class="container">
-    <h1>Contact Us</h1>
-    <ul class="people">
-          <li ng-repeat="person in people">
-            <img class="img-thumbnail" src="{{person.image}}">
-            <p>{{person.name}}     
-              <input
-                  type="checkbox"
-                  name="selectedPerson[]"
-                  value="{{person}}"
-                  
-                  ng-click="toggleSelection(person)">
-            </p>
-
-            <p>{{person.position}}</p>
-            <p>{{person.phone}}</p>
-            <p><a href="mailto:{{person.email}}?Subject=Hello" target="_top">{{person.email}}</a></p>
-
-          </li>
+    
+    <ul class="menu">
+      <li><a href="#/view1">back</a></li>
     </ul>
 
-    <table class="table table-hover">
+    <table>
       <thead>
         <th>Name</th>
         <th>Phone</th>
@@ -45,7 +30,7 @@
             {{person.phone}}  
           </td>
            <td>
-            <a href="mailto:{{person.email}}?Subject=Hello" target="_top">{{person.email}}</a>
+            {{person.email}}  
           </td>
 
         </tr>

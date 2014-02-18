@@ -1,5 +1,14 @@
 /* app css stylesheet */
-
+body{
+  padding-bottom: 50px;
+}
+td{
+  padding-left: 30px;
+}
+.people{
+  list-style: none;
+  margin-top: 20px;
+}
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
